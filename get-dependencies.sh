@@ -23,7 +23,9 @@ get-debloated-pkgs --add-common --prefer-nano
 # if you also have to make nightly releases check for DEVEL_RELEASE = 1
 #
 if [ "${DEVEL_RELEASE-}" = 1 ]; then
-    make-aur-package yamagi-quake2-git
+    package=yamagi-quake2-git
 else
-    make-aur-package yamagi-quake2
+    package=yamagi-quake2
 fi
+make-aur-package "$package"
+pacman -Q "$package" | awk '{print $2; exit}' > ~/version
