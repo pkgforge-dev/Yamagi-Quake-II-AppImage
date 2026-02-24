@@ -1,0 +1,8 @@
+#!/bin/false
+dir=$HOME/.yq2
+if [ ! -f "dir"/baseq2/game.so ]; then
+  mkdir -p "$dir"
+  cp -r "$APPDIR"/shared/lib/yamagi-quake2/* "$dir"
+fi
+cd "$dir"
+export APPDIR=$dir
