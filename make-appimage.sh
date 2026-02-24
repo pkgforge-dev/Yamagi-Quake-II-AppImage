@@ -8,13 +8,11 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/pixmaps/yamagi-quake2.png
-export DESKTOP=/usr/share/applications/yamagi-quake2.desktop
-export STARTUPWMCLASS=
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/yamagi-quake2 /usr/bin/yamagi-q2ded /usr/lib/yamagi-quake2/* /usr/lib/yamagi-quake2/baseq2/*
+quick-sharun /usr/lib/yamagi-quake2/*
 
 # Additional changes can be done in between here
 
