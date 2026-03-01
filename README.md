@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Yamagi-Quake-II-AppImage)](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/yquake2/yquake2/blob/master/stuff/icon/Quake2.png" width="128" />
+  <img src="https://github.com/yquake2/yquake2/blob/master/stuff/icon/Quake2.svg?raw" width="128" />
 </p>
 
 
