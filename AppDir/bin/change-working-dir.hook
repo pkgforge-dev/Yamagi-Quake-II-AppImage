@@ -1,0 +1,4 @@
+#!/bin/sh
+dir=$HOME/.yq2
+mkdir -p "$dir"
+cd "$dir"
