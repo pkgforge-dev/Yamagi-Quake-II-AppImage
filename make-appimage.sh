@@ -7,7 +7,7 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/pixmaps/yamagi-quake2.png
+export ICON=https://raw.githubusercontent.com/yquake2/yquake2/refs/heads/master/stuff/icon/Quake2.svg
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
