@@ -29,3 +29,6 @@ else
 fi
 make-aur-package "$package"
 pacman -Q "$package" | awk '{print $2; exit}' > ~/version
+
+mkdir -p ./AppDir/bin
+mv -v /usr/lib/yamagi-quake2/* ./AppDir/bin
