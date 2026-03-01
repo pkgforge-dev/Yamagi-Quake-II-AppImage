@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Yamagi Quake II
-Icon=yamagi-quake2
+Icon=Quake2.svg
 Exec=quake2
 StartupWMClass=
 Categories=Game;Shooter;
