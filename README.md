@@ -1,6 +1,6 @@
 <div align="center">
 
-# WIP PLEASE DONT USE YETYamagi-Quake-II-AppImage 🐧
+# Yamagi-Quake-II-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Yamagi-Quake-II-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/latest)
 [![CI Build Status](https://github.com//pkgforge-dev/Yamagi-Quake-II-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/latest)
@@ -16,6 +16,8 @@
 | [Click here](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/latest) | [Click here](https://github.com/yquake2/yquake2) |
 
 </div>
+
+### ⚠️ Place `pak*.pak` inside `~/.yq2/baseq2` ⚠️
 
 ---
 
