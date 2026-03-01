@@ -11,9 +11,9 @@
 </p>
 
 
-| Latest Stable Release | Upstream URL |
-| :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/latest) | [Click here](https://github.com/yquake2/yquake2) |
+| Latest Stable Release | Latest Nightly Relase | Upstream URL |
+| :---: | :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage/releases/tag/nightly) | [Click here](https://github.com/yquake2/yquake2) |
 
 </div>
 
