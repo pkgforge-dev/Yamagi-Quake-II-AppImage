@@ -45,7 +45,7 @@ else
     echo "---------------------------------------------------------------"
     #VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/ra*" | tail -n1 | cut -d/ -f3)
     #git clone --branch "$VERSION" --single-branch "$REPO" ./yquake2
-    VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/QUAKE2_*" | tail -n1 | cut -d/ -f3)
+    VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/QUAKE2_[0-9]*" | tail -n1 | cut -d/ -f3)
     git clone --branch "$VERSION" --single-branch "$REPO" ./yquake2
 fi
 #echo "$VERSION" > ~/version
