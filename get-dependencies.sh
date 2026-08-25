@@ -43,10 +43,13 @@ if [ "${DEVEL_RELEASE-}" = 1 ]; then
 else
     echo "Making stable build of Yamagi Quake II..."
     echo "---------------------------------------------------------------"
-    VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/ra*" | tail -n1 | cut -d/ -f3)
+    #VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/ra*" | tail -n1 | cut -d/ -f3)
+    #git clone --branch "$VERSION" --single-branch "$REPO" ./yquake2
+    VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/QUAKE2_*" | tail -n1 | cut -d/ -f3)
     git clone --branch "$VERSION" --single-branch "$REPO" ./yquake2
 fi
-echo "$VERSION" > ~/version
+#echo "$VERSION" > ~/version
+echo "${VERSION#QUAKE2_}" | tr '_' '.' > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./yquake2
