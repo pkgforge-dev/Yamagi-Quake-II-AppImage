@@ -14,6 +14,8 @@ export DEPLOY_VULKAN=1
 # Deploy dependencies
 quick-sharun ./AppDir/bin/quake2 ./AppDir/bin/*
 echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
+# this app has problems with other locales breaking physics
+echo 'LC_ALL=C.UTF-8' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
