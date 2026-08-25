@@ -29,8 +29,8 @@ get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 #make-aur-package "$package"
 #pacman -Q "$package" | awk '{print $2; exit}' > ~/version
 
-mkdir -p ./AppDir/bin
-mv -v /usr/lib/yamagi-quake2/* ./AppDir/bin
+#mkdir -p ./AppDir/bin
+#mv -v /usr/lib/yamagi-quake2/* ./AppDir/bin
 
 echo "Building Yamagi Quake II..."
 echo "---------------------------------------------------------------"
@@ -48,3 +48,7 @@ else
 fi
 echo "$VERSION" > ~/version
 
+mkdir -p ./AppDir/bin
+cd ./yquake2
+make -j$(nproc) WITH_RPATH=no WITH_SYSTEMWIDE=yes
+mv -v release/quake2 release/q2ded release/*.so release/baseq2 ../AppDir/bin
