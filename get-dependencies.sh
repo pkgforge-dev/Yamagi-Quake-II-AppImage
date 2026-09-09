@@ -21,12 +21,12 @@ if [ "${DEVEL_RELEASE-}" = 1 ]; then
     echo "Making nightly build of Yamagi Quake II..."
     echo "---------------------------------------------------------------"
     VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-    git clone "$REPO" ./yquake2
+    git clone --depth 1 "$REPO" ./yquake2
 else
     echo "Making stable build of Yamagi Quake II..."
     echo "---------------------------------------------------------------"
     VERSION=$(git ls-remote --tags --refs --sort='v:refname' "$REPO" "refs/tags/QUAKE2_[0-9]*" | tail -n1 | cut -d/ -f3)
-    git clone --branch "$VERSION" --single-branch "$REPO" ./yquake2
+    git clone --branch "$VERSION" --single-branch --depth 1 "$REPO" ./yquake2
 fi
 echo "${VERSION#QUAKE2_}" | tr '_' '.' > ~/version
 
